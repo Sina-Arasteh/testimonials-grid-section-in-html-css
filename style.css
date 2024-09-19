@@ -8,6 +8,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 #grid-container {
