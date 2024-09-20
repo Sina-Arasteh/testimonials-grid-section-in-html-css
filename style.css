@@ -1,13 +1,7 @@
 body {
     background-color: hsl(210, 46%, 95%);
-    /* padding: 10%; */
-    /* height: 97nh; */
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 25px;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -15,21 +9,25 @@ body {
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
-    /* height: 60%;
-    width: 80%; */
+    width: 85%;
+    margin: 0 auto;
 }
 
 .grid-items {
     border-radius: 6px;
     padding: 28px;
+    box-shadow: 7px 7px 7px hsl(212, 19%, 85%);
 }
 
 #item1 {
     grid-area: 1 / 1 / 2 / 3;
     background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 70px top;
 }
 
 #item2 {
@@ -59,10 +57,11 @@ body {
 
 img {
     display: block;
-    width: 35px;
-    height: 35px;
-    border-radius: 35px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
     margin-right: 15px;
+    border: 2px solid hsl(263, 57%, 57%);
 }
 
 .name-group-one, .name-group-two, .ver-group-one, .ver-group-two {
@@ -86,7 +85,7 @@ img {
 }
 
 .heading-group-one, .heading-group-two {
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
